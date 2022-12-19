@@ -21,19 +21,24 @@ const Product = ({ specificProduct }: Props) => {
       <h3>SNEAKER COMPANY</h3>
       <h2>{specificProduct.name}</h2>
       <p>{specificProduct.description}</p>
-      <p>{specificProduct.discountPrice!.toFixed()}</p>
-      <p>{specificProduct.discount!.toFixed()}</p>
-      <p>{specificProduct.originalPrice!.toFixed()}</p>
+      <p className="discounted-price">
+        ${specificProduct.discountPrice!.toFixed(2)}
+      </p>
+      <p className="discount">{specificProduct.discount!}%</p>
+      <p className="original-priceS">
+        ${specificProduct.originalPrice!.toFixed(2)}
+      </p>
+      <div>TODO Quantity</div>
       <button className="add" onClick={() => addItem(specificProduct)}>
         Add to Cart
       </button>
       {isThisInOrder && (
-        <button
+        <img
+          src="images/icon-delete.svg"
+          alt="remove"
           className="remove"
           onClick={() => removeItem(specificProduct.id)}
-        >
-          Remove
-        </button>
+        ></img>
       )}
     </div>
   );

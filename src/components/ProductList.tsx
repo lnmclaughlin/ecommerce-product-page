@@ -8,7 +8,7 @@ export const product: Item[] = [
     description:
       "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
     discountPrice: 125.0,
-    discount: 0.5,
+    discount: 50,
     originalPrice: 250.0,
   },
 ];

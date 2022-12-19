@@ -7,29 +7,45 @@ body {
   display: flex;
   height: 100vh;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 0%);
+  color: hsl(220, 13%, 13%);
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+}
+.nav-container {
+  display: flex;
+  align-items: flex-start;
+}
+.navigation {
+  margin: 5px;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: none;
+  color: hsl(220, 13%, 13%);
+}
+
+.cart img {
+  color: hsl(220, 13%, 13%);
+  width: 30px;
+  height: 30px;
+}
 .avatar {
   height: 30px;
   width: 30px;
-}
-.cart {
-  background-color: hsl(0, 0%, 0%);
-  color: hsl(0, 0%, 100%);
-  width: 30px;
-  height: 30px;
 }
 
 .ShoppingCart {
   font-size: 16px;
   width: 200px;
   height: 300px;
-  border: 0.5px solid hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 0%);
+  border: 0.5px solid hsl(223, 64%, 98%);
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%);
   margin: 10px;
 }
@@ -43,8 +59,35 @@ h3 {
   color: hsl(26, 100%, 55%);
 }
 p {
+  color: hsl(219, 9%, 45%);
   font-weight: 400;
   font-size: 16px;
+}
+.discounted-price {
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  font-size: 18px;
+}
+.discount {
+  width: 40px;
+  border: 1px solid hsl(25, 100%, 94%);
+  border-radius: 5px;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+}
+
+.add {
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(26, 100%, 55%);
+  border-radius: 10px;
+  margin: 0 65px;
+  padding: 10px 40px;
+}
+
+.remove img {
+  color: hsl(220, 13%, 13%);
 }
 
 @media only screen and (min-width: 768px) {

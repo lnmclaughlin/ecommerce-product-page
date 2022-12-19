@@ -6,20 +6,24 @@ const Header = () => {
   const { order } = useContext(OrderContext);
 
   return (
-    <div className="Header">
-      <h1>sneakers</h1>
-      <nav>
-        <button>Nav</button>
+    <header className="Header">
+      <nav className="nav-container">
+        <img
+          className="navigation"
+          src="images/icon-menu.svg"
+          onClick={() => {}}
+        />
+        <img className="logo" src="images/logo.svg" alt="logo"></img>
         <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li className="nav">Collections</li>
+          <li className="nav">Men</li>
+          <li className="nav">Women</li>
+          <li className="nav">About</li>
+          <li className="nav">Contact</li>
         </ul>
         <img className="avatar" src="/images/image-avatar.png" alt="avatar" />
       </nav>
-    </div>
+    </header>
   );
 };
 

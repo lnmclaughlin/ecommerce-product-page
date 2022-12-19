@@ -18,12 +18,11 @@ function App() {
               path="/"
               element={
                 <div className="">
-                  <button
+                  <img
+                    src="/images/icon-cart.svg"
                     className="cart"
                     onClick={() => setShowCart((prev) => !prev)}
-                  >
-                    Cart
-                  </button>
+                  ></img>
                   <ProductList />
                   {showCart && <ShoppingCart />}
                 </div>
