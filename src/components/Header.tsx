@@ -14,13 +14,11 @@ const Header = () => {
           onClick={() => {}}
         />
         <img className="logo" src="images/logo.svg" alt="logo"></img>
-        <ul>
-          <li className="nav">Collections</li>
-          <li className="nav">Men</li>
-          <li className="nav">Women</li>
-          <li className="nav">About</li>
-          <li className="nav">Contact</li>
-        </ul>
+        <li className="nav">Collections</li>
+        <li className="nav">Men</li>
+        <li className="nav">Women</li>
+        <li className="nav">About</li>
+        <li className="nav">Contact</li>
         <img className="avatar" src="/images/image-avatar.png" alt="avatar" />
       </nav>
     </header>
