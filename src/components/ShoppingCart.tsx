@@ -18,6 +18,7 @@ const ShoppingCart = () => {
             <p className="order-item">
               {orderItem.name} - ${orderItem.discountPrice!.toFixed(2)}
             </p>
+            <p>{getTotal()}</p>
           </li>
         ))}
       </ul>

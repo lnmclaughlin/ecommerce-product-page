@@ -21,14 +21,31 @@ const Product = ({ specificProduct }: Props) => {
       <h3>SNEAKER COMPANY</h3>
       <h2>{specificProduct.name}</h2>
       <p>{specificProduct.description}</p>
-      <p className="discounted-price">
-        ${specificProduct.discountPrice!.toFixed(2)}
-      </p>
-      <p className="discount">{specificProduct.discount!}%</p>
-      <p className="original-priceS">
-        ${specificProduct.originalPrice!.toFixed(2)}
-      </p>
-      <div>TODO Quantity</div>
+      <div className="price-container">
+        <p className="discounted-price">
+          ${specificProduct.discountPrice!.toFixed(2)}
+        </p>
+        <p className="discount">{specificProduct.discount!}%</p>
+        <p className="original-price">
+          ${specificProduct.originalPrice!.toFixed(2)}
+        </p>
+      </div>
+
+      <div className="counter-container">
+        <img
+          className="plus"
+          src="/images/icon-plus.svg"
+          alt="add"
+          onClick={() => {}}
+        ></img>
+        <span className="counter">0</span>
+        <img
+          className="minus"
+          src="/images/icon-minus.svg"
+          alt="remove"
+          onClick={() => {}}
+        ></img>
+      </div>
       <button className="add" onClick={() => addItem(specificProduct)}>
         Add to Cart
       </button>

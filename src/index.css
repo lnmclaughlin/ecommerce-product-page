@@ -1,10 +1,12 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* box-sizing: content-box; */
 }
 
 body {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: hsl(0, 0%, 100%);
   color: hsl(220, 13%, 13%);
@@ -12,25 +14,28 @@ body {
   font-weight: 700;
 }
 
-li {
-  list-style-type: none;
-}
 .nav-container {
   display: flex;
-  align-items: flex-start;
 }
 .navigation {
+  flex-direction: column;
+  align-items: flex-start;
   margin: 5px;
 }
 
 .logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-self: center;
 }
+
 .nav {
-  visibility: hidden;
+  display: none;
+  /* visibility: hidden; */
   color: hsl(220, 13%, 13%);
+}
+li {
+  list-style-type: none;
 }
 
 .cart img {
@@ -39,7 +44,8 @@ li {
   height: 30px;
 }
 .avatar {
-  margin-left: 20px;
+  margin-left: 40px;
+  padding-left: 200px;
   height: 30px;
   width: 30px;
 }
@@ -55,10 +61,15 @@ li {
   padding: 5px;
   justify-content: center;
 }
+.specific-product-page {
+  display: flex;
+  flex-direction: column;
+}
 
 .product-image {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
 }
 h3 {
   font-size: small;
@@ -70,12 +81,19 @@ p {
   font-weight: 400;
   font-size: 16px;
 }
+.price-container {
+  display: flex;
+  align-items: center;
+}
 .discounted-price {
+  margin: 5px;
+  padding-right: 5px;
   color: hsl(220, 13%, 13%);
   font-weight: 700;
   font-size: 18px;
 }
 .discount {
+  margin: 5px;
   width: 40px;
   border: 1px solid hsl(25, 100%, 94%);
   border-radius: 5px;
@@ -83,7 +101,31 @@ p {
   color: hsl(26, 100%, 55%);
   font-weight: 700;
 }
+.original-price {
+  margin-left: 250px;
+  color: hsl(219, 9%, 45%);
+  text-decoration: line-through;
+}
 
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(223, 64%, 98%);
+  color: hsl(220, 13%, 13%);
+  border: 1px solid hsl(223, 64%, 98%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 0 65px;
+}
+.plus {
+  margin-right: 15 px;
+  padding-right: 15px;
+}
+.minus {
+  margin-left: 15 px;
+  padding-left: 15px;
+}
 .add {
   background-color: hsl(26, 100%, 55%);
   color: hsl(0, 0%, 100%);
@@ -97,4 +139,10 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .product-image {
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
 }
