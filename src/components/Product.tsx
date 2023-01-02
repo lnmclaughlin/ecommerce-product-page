@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import OrderContext from "../context/OrderContext";
 import Item from "../models/Item";
+import Lightbox from "./Lightbox";
 
 export interface Props {
   specificProduct: Item;
@@ -17,7 +18,10 @@ const Product = ({ specificProduct }: Props) => {
         className="product-image"
         src="/images/image-product-1.jpg"
         alt="sneakers"
-      />
+      >
+        {specificProduct.image}
+      </img>
+
       <h3>SNEAKER COMPANY</h3>
       <h2>{specificProduct.name}</h2>
       <p>{specificProduct.description}</p>

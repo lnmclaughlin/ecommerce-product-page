@@ -11,6 +11,7 @@ const Header = () => {
         <img
           className="navigation"
           src="images/icon-menu.svg"
+          alt="navigation-icon"
           onClick={() => {}}
         />
         <img className="logo" src="images/logo.svg" alt="logo"></img>
