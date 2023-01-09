@@ -1,8 +1,4 @@
 import { SetStateAction, useState } from "react";
-import image1 from "./images/image-product-1-thumbnail.jpg";
-import image2 from "./images/image-product-2-thumbnail.jpg";
-import image3 from "./images/image-product-3-thumbnail.jpg";
-import image4 from "./images/image-product-4-thumbnail.jpg";
 
 const Lightbox = () => {
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
