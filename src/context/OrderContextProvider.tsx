@@ -8,7 +8,6 @@ interface Props {
 
 const OrderContextProvider = ({ children }: Props) => {
   const [order, setOrder] = useState<Item[]>([]);
-
   // let total = 0;
 
   const addItem = (item: Item): void => {

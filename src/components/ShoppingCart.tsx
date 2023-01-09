@@ -12,7 +12,7 @@ const ShoppingCart = () => {
   };
   return (
     <div className="ShoppingCart">
-      <ul>
+      <ul className="shopping-cart">
         {order.map((orderItem) => (
           <li className="order">
             <p className="order-item">

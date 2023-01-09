@@ -12,25 +12,23 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <main>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <div className="">
-                  <img
-                    src="/images/icon-cart.svg"
-                    className="cart"
-                    onClick={() => setShowCart((prev) => !prev)}
-                  ></img>
-                  <ProductList />
-                  {showCart && <ShoppingCart />}
-                </div>
-              }
-            />
-            <Route path="/details/:id" element={<Details />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="">
+                <img
+                  src="/images/icon-cart.svg"
+                  className="cart"
+                  onClick={() => setShowCart((prev) => !prev)}
+                />
+                <ProductList />
+                {showCart && <ShoppingCart />}
+              </div>
+            }
+          />
+          <Route path="/details/:id" element={<Details />} />
+        </Routes>
       </Router>
     </div>
   );

@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import OrderContext from "../context/OrderContext";
-import ShoppingCart from "./ShoppingCart";
 
 const Header = () => {
   const { order } = useContext(OrderContext);
@@ -14,7 +13,7 @@ const Header = () => {
           alt="navigation-icon"
           onClick={() => {}}
         />
-        <img className="logo" src="images/logo.svg" alt="logo"></img>
+        <img className="logo" src="images/logo.svg" alt="logo" />
         <li className="nav">Collections</li>
         <li className="nav">Men</li>
         <li className="nav">Women</li>

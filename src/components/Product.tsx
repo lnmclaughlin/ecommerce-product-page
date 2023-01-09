@@ -64,6 +64,7 @@ const Product = ({ specificProduct }: Props) => {
           )}
         </>
       </div>
+      <Lightbox />
     </div>
   );
 };
