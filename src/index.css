@@ -144,6 +144,27 @@ p {
   color: hsl(220, 13%, 13%);
 }
 
+.image-card {
+  margin-top: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+#lightbox {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox-img {
+  height: 80vh;
+  max-width: 90vw;
+  object-fit: cover;
+}
+
 @media only screen and (min-width: 768px) {
   .nav-container {
     display: flex;
@@ -211,21 +232,4 @@ p {
     margin-left: 20px;
     padding-left: 20px;
   }
-}
-
-.image-card {
-  margin-top: 15px;
-
-  width: 80px;
-  height: 80px;
-}
-
-#lightbox {
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

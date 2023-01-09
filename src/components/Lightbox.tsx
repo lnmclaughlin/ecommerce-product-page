@@ -1,5 +1,4 @@
 import { SetStateAction, useState } from "react";
-
 const Lightbox = () => {
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
   const [imageToShow, setImageToShow] = useState("");
@@ -9,15 +8,16 @@ const Lightbox = () => {
   const image3 = "./images/image-product-3-thumbnail.jpg";
   const image4 = "./images/image-product-4-thumbnail.jpg";
   const imageArray = [image1, image2, image3, image4];
-  const imageCards = imageArray.map((image) => (
-    <img className="image-card" src={image} />
-  ));
+
   //function to show a specific image in the lightbox, amd make lightbox visible
   const showImage = (image: SetStateAction<string>) => {
     setImageToShow(image);
     setLightBoxDisplay(true);
   };
 
+  const imageCards = imageArray.map((image) => (
+    <img className="image-card" src={image} />
+  ));
   //hide lightbox
   const hideLightBox = () => {
     setLightBoxDisplay(false);
